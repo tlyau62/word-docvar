@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "dgSpecHash": "UozndXMHLNlfo7ct4T9ROpCOXwOPb4humoW9nS515g8PNWERpe+CGFvbOKQKua+E+obZtBrcLFJojsUsLRotgw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\tyautl\\Git\\WordDocVar\\WordDocVar\\WordDocVar.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\tyautl\\.nuget\\packages\\documentformat.openxml\\2.18.0\\documentformat.openxml.2.18.0.nupkg.sha512",
+    "C:\\Users\\tyautl\\.nuget\\packages\\microsoft.netcore.platforms\\2.0.0\\microsoft.netcore.platforms.2.0.0.nupkg.sha512",
+    "C:\\Users\\tyautl\\.nuget\\packages\\microsoft.win32.systemevents\\4.5.0\\microsoft.win32.systemevents.4.5.0.nupkg.sha512",
+    "C:\\Users\\tyautl\\.nuget\\packages\\newtonsoft.json\\12.0.2\\newtonsoft.json.12.0.2.nupkg.sha512",
+    "C:\\Users\\tyautl\\.nuget\\packages\\openxmlpowertools-netstandard\\4.4.21\\openxmlpowertools-netstandard.4.4.21.nupkg.sha512",
+    "C:\\Users\\tyautl\\.nuget\\packages\\openxmltemplates\\2.0.4\\openxmltemplates.2.0.4.nupkg.sha512",
+    "C:\\Users\\tyautl\\.nuget\\packages\\system.drawing.common\\4.5.0\\system.drawing.common.4.5.0.nupkg.sha512",
+    "C:\\Users\\tyautl\\.nuget\\packages\\system.io.packaging\\4.7.0\\system.io.packaging.4.7.0.nupkg.sha512"
+  ],
+  "logs": []
+}
