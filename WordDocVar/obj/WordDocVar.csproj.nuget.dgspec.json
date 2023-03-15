@@ -39,17 +39,25 @@
       "frameworks": {
         "netcoreapp3.1": {
           "dependencies": {
+            "AntiXSS": {
+              "target": "Package",
+              "version": "[4.3.0, )"
+            },
             "DocumentFormat.OpenXml": {
               "target": "Package",
               "version": "[2.18.0, )"
             },
-            "OpenXMLTemplates": {
+            "HtmlSanitizer": {
+              "target": "Package",
+              "version": "[8.0.645, )"
+            },
+            "Open-Xml-PowerTools": {
+              "target": "Package",
+              "version": "[4.4.0, )"
+            },
+            "OpenXMLTemplatesForked": {
               "target": "Package",
               "version": "[2.0.4, )"
-            },
-            "OpenXmlPowerTools-NetStandard": {
-              "target": "Package",
-              "version": "[4.4.21, )"
             }
           },
           "imports": [

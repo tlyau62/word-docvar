@@ -4,7 +4,6 @@ C:\Users\tyautl\Git\WordDocVar\WordDocVar\bin\Debug\netcoreapp3.1\WordDocVar.run
 C:\Users\tyautl\Git\WordDocVar\WordDocVar\bin\Debug\netcoreapp3.1\WordDocVar.runtimeconfig.dev.json
 C:\Users\tyautl\Git\WordDocVar\WordDocVar\bin\Debug\netcoreapp3.1\WordDocVar.dll
 C:\Users\tyautl\Git\WordDocVar\WordDocVar\bin\Debug\netcoreapp3.1\WordDocVar.pdb
-C:\Users\tyautl\Git\WordDocVar\WordDocVar\obj\Debug\netcoreapp3.1\WordDocVar.csprojAssemblyReference.cache
 C:\Users\tyautl\Git\WordDocVar\WordDocVar\obj\Debug\netcoreapp3.1\WordDocVar.AssemblyInfoInputs.cache
 C:\Users\tyautl\Git\WordDocVar\WordDocVar\obj\Debug\netcoreapp3.1\WordDocVar.AssemblyInfo.cs
 C:\Users\tyautl\Git\WordDocVar\WordDocVar\obj\Debug\netcoreapp3.1\WordDocVar.dll
@@ -21,4 +20,14 @@ C:\Users\tyautl\Git\WordDocVar\WordDocVar\bin\Debug\netcoreapp3.1\System.Drawing
 C:\Users\tyautl\Git\WordDocVar\WordDocVar\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\Microsoft.Win32.SystemEvents.dll
 C:\Users\tyautl\Git\WordDocVar\WordDocVar\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Drawing.Common.dll
 C:\Users\tyautl\Git\WordDocVar\WordDocVar\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Drawing.Common.dll
+C:\Users\tyautl\Git\WordDocVar\WordDocVar\obj\Debug\netcoreapp3.1\WordDocVar.csprojAssemblyReference.cache
+C:\Users\tyautl\Git\WordDocVar\WordDocVar\bin\Debug\netcoreapp3.1\AngleSharp.dll
+C:\Users\tyautl\Git\WordDocVar\WordDocVar\bin\Debug\netcoreapp3.1\AngleSharp.Css.dll
+C:\Users\tyautl\Git\WordDocVar\WordDocVar\bin\Debug\netcoreapp3.1\HtmlSanitizer.dll
+C:\Users\tyautl\Git\WordDocVar\WordDocVar\bin\Debug\netcoreapp3.1\System.Collections.Immutable.dll
+C:\Users\tyautl\Git\WordDocVar\WordDocVar\bin\Debug\netcoreapp3.1\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\tyautl\Git\WordDocVar\WordDocVar\bin\Debug\netcoreapp3.1\System.Text.Encoding.CodePages.dll
+C:\Users\tyautl\Git\WordDocVar\WordDocVar\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.1\System.Text.Encoding.CodePages.dll
+C:\Users\tyautl\Git\WordDocVar\WordDocVar\bin\Debug\netcoreapp3.1\AntiXssLibrary.dll
+C:\Users\tyautl\Git\WordDocVar\WordDocVar\bin\Debug\netcoreapp3.1\HtmlSanitizationLibrary.dll
 C:\Users\tyautl\Git\WordDocVar\WordDocVar\obj\Debug\netcoreapp3.1\WordDocVar.csproj.CoreCompileInputs.cache

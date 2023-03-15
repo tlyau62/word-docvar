@@ -6,13 +6,11 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="AntiXSS" Version="4.3.0" />
     <PackageReference Include="DocumentFormat.OpenXml" Version="2.18.0" />
-    <PackageReference Include="OpenXmlPowerTools-NetStandard" Version="4.4.21" />
-    <PackageReference Include="OpenXMLTemplates" Version="2.0.4" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Resources\" />
+    <PackageReference Include="HtmlSanitizer" Version="8.0.645" />
+    <PackageReference Include="Open-Xml-PowerTools" Version="4.4.0" />
+    <PackageReference Include="OpenXMLTemplatesForked" Version="2.0.4" />
   </ItemGroup>
 
 </Project>

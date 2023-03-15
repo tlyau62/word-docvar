@@ -5,11 +5,13 @@ using OpenXMLTemplates.Documents;
 using OpenXMLTemplates.Variables;
 using System;
 using System.Collections.Generic;
-using System.Text;
 using System.Linq;
 using System.Xml.Linq;
 using System.IO;
 using DocumentFormat.OpenXml.Wordprocessing;
+using System.Net;
+using Ganss.Xss;
+using Microsoft.Security.Application;
 
 namespace WordDocVar
 {
@@ -56,7 +58,10 @@ namespace WordDocVar
 
         private OpenXmlElement ConvertHtmlToÓml(string html)
         {
-            var xe = XElement.Parse($"<html><body>{html}</body></html>");
+            var htmlSanitizer = new HtmlSanitizer();
+            var shtml = WebUtility.HtmlDecode(htmlSanitizer.Sanitize(html)).Replace("&", "&amp;");
+            var wrap = $"<html><body>{shtml}</body></html>";
+            var xe = XElement.Parse(wrap);
             var wml = OpenXmlPowerTools.HtmlToWmlConverter.ConvertHtmlToWml("", "", "", xe, OpenXmlPowerTools.HtmlToWmlConverter.GetDefaultSettings());
 
             return ToOpenXmlElement(wml.MainDocumentPart);

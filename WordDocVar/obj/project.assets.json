@@ -2,6 +2,42 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v3.1": {
+      "AngleSharp/0.17.1": {
+        "type": "package",
+        "dependencies": {
+          "System.Buffers": "4.5.1",
+          "System.Text.Encoding.CodePages": "6.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/AngleSharp.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/AngleSharp.dll": {}
+        }
+      },
+      "AngleSharp.Css/0.17.0": {
+        "type": "package",
+        "dependencies": {
+          "AngleSharp": "[0.17.0, 0.18.0)"
+        },
+        "compile": {
+          "lib/netstandard2.0/AngleSharp.Css.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/AngleSharp.Css.dll": {}
+        }
+      },
+      "AntiXSS/4.3.0": {
+        "type": "package",
+        "compile": {
+          "lib/net40/AntiXssLibrary.dll": {},
+          "lib/net40/HtmlSanitizationLibrary.dll": {}
+        },
+        "runtime": {
+          "lib/net40/AntiXssLibrary.dll": {},
+          "lib/net40/HtmlSanitizationLibrary.dll": {}
+        }
+      },
       "DocumentFormat.OpenXml/2.18.0": {
         "type": "package",
         "dependencies": {
@@ -12,6 +48,20 @@
         },
         "runtime": {
           "lib/netstandard2.0/DocumentFormat.OpenXml.dll": {}
+        }
+      },
+      "HtmlSanitizer/8.0.645": {
+        "type": "package",
+        "dependencies": {
+          "AngleSharp": "[0.17.1]",
+          "AngleSharp.Css": "[0.17.0]",
+          "System.Collections.Immutable": "7.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/HtmlSanitizer.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/HtmlSanitizer.dll": {}
         }
       },
       "Microsoft.NETCore.Platforms/2.0.0": {
@@ -50,7 +100,7 @@
           "lib/netstandard2.0/Newtonsoft.Json.dll": {}
         }
       },
-      "OpenXmlPowerTools-NetStandard/4.4.21": {
+      "Open-Xml-PowerTools/4.4.0": {
         "type": "package",
         "dependencies": {
           "DocumentFormat.OpenXml": "2.8.1",
@@ -63,10 +113,10 @@
           "lib/netstandard2.0/OpenXmlPowerTools.dll": {}
         }
       },
-      "OpenXMLTemplates/2.0.4": {
+      "OpenXMLTemplatesForked/2.0.4": {
         "type": "package",
         "dependencies": {
-          "DocumentFormat.OpenXml": "2.9.1",
+          "DocumentFormat.OpenXml": "2.7.1",
           "Newtonsoft.Json": "12.0.2"
         },
         "compile": {
@@ -74,6 +124,31 @@
         },
         "runtime": {
           "lib/netstandard2.0/OpenXMLTemplates.dll": {}
+        }
+      },
+      "System.Buffers/4.5.1": {
+        "type": "package",
+        "compile": {
+          "ref/netcoreapp2.0/_._": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.0/_._": {}
+        }
+      },
+      "System.Collections.Immutable/7.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Memory": "4.5.5",
+          "System.Runtime.CompilerServices.Unsafe": "6.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/System.Collections.Immutable.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Collections.Immutable.dll": {}
+        },
+        "build": {
+          "buildTransitive/netcoreapp2.0/System.Collections.Immutable.targets": {}
         }
       },
       "System.Drawing.Common/4.5.0": {
@@ -107,10 +182,114 @@
         "runtime": {
           "lib/netstandard2.0/System.IO.Packaging.dll": {}
         }
+      },
+      "System.Memory/4.5.5": {
+        "type": "package",
+        "compile": {
+          "ref/netcoreapp2.1/_._": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.1/_._": {}
+        }
+      },
+      "System.Runtime.CompilerServices.Unsafe/6.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/netcoreapp3.1/System.Runtime.CompilerServices.Unsafe.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/System.Runtime.CompilerServices.Unsafe.dll": {}
+        },
+        "build": {
+          "buildTransitive/netcoreapp3.1/_._": {}
+        }
+      },
+      "System.Text.Encoding.CodePages/6.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "6.0.0"
+        },
+        "compile": {
+          "lib/netcoreapp3.1/System.Text.Encoding.CodePages.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/System.Text.Encoding.CodePages.dll": {}
+        },
+        "build": {
+          "buildTransitive/netcoreapp3.1/_._": {}
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/netcoreapp3.1/System.Text.Encoding.CodePages.dll": {
+            "assetType": "runtime",
+            "rid": "win"
+          }
+        }
       }
     }
   },
   "libraries": {
+    "AngleSharp/0.17.1": {
+      "sha512": "5MPI4bbixlwxb0W/smOMeIR+QlxMy5/5jD+WnIAw4pBC+7AhLPe5bS3cLgQMJyvd6q0A48sG+uYOt/ep406GLA==",
+      "type": "package",
+      "path": "anglesharp/0.17.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "anglesharp.0.17.1.nupkg.sha512",
+        "anglesharp.nuspec",
+        "lib/net461/AngleSharp.dll",
+        "lib/net461/AngleSharp.xml",
+        "lib/net472/AngleSharp.dll",
+        "lib/net472/AngleSharp.xml",
+        "lib/netstandard2.0/AngleSharp.dll",
+        "lib/netstandard2.0/AngleSharp.xml",
+        "logo.png"
+      ]
+    },
+    "AngleSharp.Css/0.17.0": {
+      "sha512": "bg0AcugmX6BFEi/DHG61QrwRU8iuiX4H8LZehdIzYdqOM/dgb3BsCTzNIcc1XADn4+xfQEdVwJYTSwUxroL4vg==",
+      "type": "package",
+      "path": "anglesharp.css/0.17.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "anglesharp.css.0.17.0.nupkg.sha512",
+        "anglesharp.css.nuspec",
+        "lib/net461/AngleSharp.Css.dll",
+        "lib/net461/AngleSharp.Css.xml",
+        "lib/net472/AngleSharp.Css.dll",
+        "lib/net472/AngleSharp.Css.xml",
+        "lib/net6.0/AngleSharp.Css.dll",
+        "lib/net6.0/AngleSharp.Css.xml",
+        "lib/net7.0/AngleSharp.Css.dll",
+        "lib/net7.0/AngleSharp.Css.xml",
+        "lib/netstandard2.0/AngleSharp.Css.dll",
+        "lib/netstandard2.0/AngleSharp.Css.xml",
+        "logo.png"
+      ]
+    },
+    "AntiXSS/4.3.0": {
+      "sha512": "NDEKu4wmQ109bbreNetddmufZU6gPDhVKqX+FqGiMylektPOQB+lPTtuZre41tcDLGHG7ju8z0PPZubrv4z9QQ==",
+      "type": "package",
+      "path": "antixss/4.3.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "antixss.4.3.0.nupkg.sha512",
+        "antixss.nuspec",
+        "lib/net20/AntiXssLibrary.dll",
+        "lib/net20/AntiXssLibrary.xml",
+        "lib/net35/AntiXssLibrary.dll",
+        "lib/net35/AntiXssLibrary.xml",
+        "lib/net35/HtmlSanitizationLibrary.dll",
+        "lib/net35/HtmlSanitizationLibrary.xml",
+        "lib/net40/AntiXssLibrary.dll",
+        "lib/net40/AntiXssLibrary.xml",
+        "lib/net40/HtmlSanitizationLibrary.dll",
+        "lib/net40/HtmlSanitizationLibrary.xml"
+      ]
+    },
     "DocumentFormat.OpenXml/2.18.0": {
       "sha512": "5fmehgA7WmJD551QwBhvjSsEmMbCQ/yfW83ZLfbPx1TeQGm0ikGIwAvz/XfO4veCjYWpBQfFH9elVhC2Y+HatQ==",
       "type": "package",
@@ -131,6 +310,22 @@
         "lib/netstandard1.3/DocumentFormat.OpenXml.xml",
         "lib/netstandard2.0/DocumentFormat.OpenXml.dll",
         "lib/netstandard2.0/DocumentFormat.OpenXml.xml"
+      ]
+    },
+    "HtmlSanitizer/8.0.645": {
+      "sha512": "5DD+n6fLj8lvU8P+zu/iu8iSYHBVUWh+OZ1170mndj4nUIrwhSpLVOzvU/xHR2QU0jp9Vn/YWyfEcV/t6qYmiw==",
+      "type": "package",
+      "path": "htmlsanitizer/8.0.645",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "htmlsanitizer.8.0.645.nupkg.sha512",
+        "htmlsanitizer.nuspec",
+        "lib/net461/HtmlSanitizer.dll",
+        "lib/net461/HtmlSanitizer.xml",
+        "lib/netstandard2.0/HtmlSanitizer.dll",
+        "lib/netstandard2.0/HtmlSanitizer.xml"
       ]
     },
     "Microsoft.NETCore.Platforms/2.0.0": {
@@ -200,28 +395,89 @@
         "newtonsoft.json.nuspec"
       ]
     },
-    "OpenXmlPowerTools-NetStandard/4.4.21": {
-      "sha512": "xV9TFExgJZ6sN0jGSiUGF5fW78emFrZMJqD5WUY87zthvp6x/XzE89a/SzMuNEkhOSrdq1Oe1xIXAfwni5/vtw==",
+    "Open-Xml-PowerTools/4.4.0": {
+      "sha512": "zdxzqgaByTx4UJpxA+SfLW4YpZwDkmPy9Vw2r+Y3RQQh0roRDyygvcalZR5C66kiRhpkbGV2azYKUNw6xVotpg==",
       "type": "package",
-      "path": "openxmlpowertools-netstandard/4.4.21",
+      "path": "open-xml-powertools/4.4.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
+        "lib/net45/OpenXmlPowerTools.dll",
+        "lib/net46/OpenXmlPowerTools.dll",
         "lib/netstandard2.0/OpenXmlPowerTools.dll",
-        "openxmlpowertools-netstandard.4.4.21.nupkg.sha512",
-        "openxmlpowertools-netstandard.nuspec"
+        "open-xml-powertools.4.4.0.nupkg.sha512",
+        "open-xml-powertools.nuspec"
       ]
     },
-    "OpenXMLTemplates/2.0.4": {
-      "sha512": "ylSGq3gGDx6+/bE/k4hmvr0HCaIzXpNZ8RS+CRM7gEWOwFPPkjitX6SDw+u62xLmEf7bMDtkNtQLwNW4o4v7Xw==",
+    "OpenXMLTemplatesForked/2.0.4": {
+      "sha512": "8yz+qJpYKTNuZarAtIP4zOwuFKKQ5L/W0JAe40UTj9AEx9h3VqlsIg3KKQHVhfwQujXBbNBuBTiWIRrpCJw9Jg==",
       "type": "package",
-      "path": "openxmltemplates/2.0.4",
+      "path": "openxmltemplatesforked/2.0.4",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "lib/netstandard2.0/OpenXMLTemplates.dll",
-        "openxmltemplates.2.0.4.nupkg.sha512",
-        "openxmltemplates.nuspec"
+        "openxmltemplatesforked.2.0.4.nupkg.sha512",
+        "openxmltemplatesforked.nuspec"
+      ]
+    },
+    "System.Buffers/4.5.1": {
+      "sha512": "Rw7ijyl1qqRS0YQD/WycNst8hUUMgrMH4FCn1nNm27M4VxchZ1js3fVjQaANHO5f3sN4isvP4a+Met9Y4YomAg==",
+      "type": "package",
+      "path": "system.buffers/4.5.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/System.Buffers.dll",
+        "lib/net461/System.Buffers.xml",
+        "lib/netcoreapp2.0/_._",
+        "lib/netstandard1.1/System.Buffers.dll",
+        "lib/netstandard1.1/System.Buffers.xml",
+        "lib/netstandard2.0/System.Buffers.dll",
+        "lib/netstandard2.0/System.Buffers.xml",
+        "lib/uap10.0.16299/_._",
+        "ref/net45/System.Buffers.dll",
+        "ref/net45/System.Buffers.xml",
+        "ref/netcoreapp2.0/_._",
+        "ref/netstandard1.1/System.Buffers.dll",
+        "ref/netstandard1.1/System.Buffers.xml",
+        "ref/netstandard2.0/System.Buffers.dll",
+        "ref/netstandard2.0/System.Buffers.xml",
+        "ref/uap10.0.16299/_._",
+        "system.buffers.4.5.1.nupkg.sha512",
+        "system.buffers.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "System.Collections.Immutable/7.0.0": {
+      "sha512": "dQPcs0U1IKnBdRDBkrCTi1FoajSTBzLcVTpjO4MBCMC7f4pDOIPzgBoX8JjG7X6uZRJ8EBxsi8+DR1JuwjnzOQ==",
+      "type": "package",
+      "path": "system.collections.immutable/7.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "README.md",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/net461/System.Collections.Immutable.targets",
+        "buildTransitive/net462/_._",
+        "buildTransitive/net6.0/_._",
+        "buildTransitive/netcoreapp2.0/System.Collections.Immutable.targets",
+        "lib/net462/System.Collections.Immutable.dll",
+        "lib/net462/System.Collections.Immutable.xml",
+        "lib/net6.0/System.Collections.Immutable.dll",
+        "lib/net6.0/System.Collections.Immutable.xml",
+        "lib/net7.0/System.Collections.Immutable.dll",
+        "lib/net7.0/System.Collections.Immutable.xml",
+        "lib/netstandard2.0/System.Collections.Immutable.dll",
+        "lib/netstandard2.0/System.Collections.Immutable.xml",
+        "system.collections.immutable.7.0.0.nupkg.sha512",
+        "system.collections.immutable.nuspec",
+        "useSharedDesignerContext.txt"
       ]
     },
     "System.Drawing.Common/4.5.0": {
@@ -283,13 +539,102 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "System.Memory/4.5.5": {
+      "sha512": "XIWiDvKPXaTveaB7HVganDlOCRoj03l+jrwNvcge/t8vhGYKvqV+dMv6G4SAX2NoNmN0wZfVPTAlFwZcZvVOUw==",
+      "type": "package",
+      "path": "system.memory/4.5.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/System.Memory.dll",
+        "lib/net461/System.Memory.xml",
+        "lib/netcoreapp2.1/_._",
+        "lib/netstandard1.1/System.Memory.dll",
+        "lib/netstandard1.1/System.Memory.xml",
+        "lib/netstandard2.0/System.Memory.dll",
+        "lib/netstandard2.0/System.Memory.xml",
+        "ref/netcoreapp2.1/_._",
+        "system.memory.4.5.5.nupkg.sha512",
+        "system.memory.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "System.Runtime.CompilerServices.Unsafe/6.0.0": {
+      "sha512": "/iUeP3tq1S0XdNNoMz5C9twLSrM/TH+qElHkXWaPvuNOt+99G75NrV0OS2EqHx5wMN7popYjpc8oTjC1y16DLg==",
+      "type": "package",
+      "path": "system.runtime.compilerservices.unsafe/6.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.targets",
+        "buildTransitive/netcoreapp3.1/_._",
+        "lib/net461/System.Runtime.CompilerServices.Unsafe.dll",
+        "lib/net461/System.Runtime.CompilerServices.Unsafe.xml",
+        "lib/net6.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "lib/net6.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "lib/netcoreapp3.1/System.Runtime.CompilerServices.Unsafe.dll",
+        "lib/netcoreapp3.1/System.Runtime.CompilerServices.Unsafe.xml",
+        "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
+        "system.runtime.compilerservices.unsafe.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    },
+    "System.Text.Encoding.CodePages/6.0.0": {
+      "sha512": "ZFCILZuOvtKPauZ/j/swhvw68ZRi9ATCfvGbk1QfydmcXBkIWecWKn/250UH7rahZ5OoDBaiAudJtPvLwzw85A==",
+      "type": "package",
+      "path": "system.text.encoding.codepages/6.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/netcoreapp2.0/System.Text.Encoding.CodePages.targets",
+        "buildTransitive/netcoreapp3.1/_._",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net461/System.Text.Encoding.CodePages.dll",
+        "lib/net461/System.Text.Encoding.CodePages.xml",
+        "lib/net6.0/System.Text.Encoding.CodePages.dll",
+        "lib/net6.0/System.Text.Encoding.CodePages.xml",
+        "lib/netcoreapp3.1/System.Text.Encoding.CodePages.dll",
+        "lib/netcoreapp3.1/System.Text.Encoding.CodePages.xml",
+        "lib/netstandard2.0/System.Text.Encoding.CodePages.dll",
+        "lib/netstandard2.0/System.Text.Encoding.CodePages.xml",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "runtimes/win/lib/net461/System.Text.Encoding.CodePages.dll",
+        "runtimes/win/lib/net461/System.Text.Encoding.CodePages.xml",
+        "runtimes/win/lib/net6.0/System.Text.Encoding.CodePages.dll",
+        "runtimes/win/lib/net6.0/System.Text.Encoding.CodePages.xml",
+        "runtimes/win/lib/netcoreapp3.1/System.Text.Encoding.CodePages.dll",
+        "runtimes/win/lib/netcoreapp3.1/System.Text.Encoding.CodePages.xml",
+        "runtimes/win/lib/netstandard2.0/System.Text.Encoding.CodePages.dll",
+        "runtimes/win/lib/netstandard2.0/System.Text.Encoding.CodePages.xml",
+        "system.text.encoding.codepages.6.0.0.nupkg.sha512",
+        "system.text.encoding.codepages.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
+      "AntiXSS >= 4.3.0",
       "DocumentFormat.OpenXml >= 2.18.0",
-      "OpenXMLTemplates >= 2.0.4",
-      "OpenXmlPowerTools-NetStandard >= 4.4.21"
+      "HtmlSanitizer >= 8.0.645",
+      "Open-Xml-PowerTools >= 4.4.0",
+      "OpenXMLTemplatesForked >= 2.0.4"
     ]
   },
   "packageFolders": {
@@ -330,17 +675,25 @@
     "frameworks": {
       "netcoreapp3.1": {
         "dependencies": {
+          "AntiXSS": {
+            "target": "Package",
+            "version": "[4.3.0, )"
+          },
           "DocumentFormat.OpenXml": {
             "target": "Package",
             "version": "[2.18.0, )"
           },
-          "OpenXMLTemplates": {
+          "HtmlSanitizer": {
+            "target": "Package",
+            "version": "[8.0.645, )"
+          },
+          "Open-Xml-PowerTools": {
+            "target": "Package",
+            "version": "[4.4.0, )"
+          },
+          "OpenXMLTemplatesForked": {
             "target": "Package",
             "version": "[2.0.4, )"
-          },
-          "OpenXmlPowerTools-NetStandard": {
-            "target": "Package",
-            "version": "[4.4.21, )"
           }
         },
         "imports": [
@@ -361,5 +714,17 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'AntiXSS 4.3.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
+      "libraryId": "AntiXSS",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v3.1"
+      ]
+    }
+  ]
 }

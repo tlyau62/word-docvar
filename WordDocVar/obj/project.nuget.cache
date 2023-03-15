@@ -1,17 +1,37 @@
 {
   "version": 2,
-  "dgSpecHash": "UozndXMHLNlfo7ct4T9ROpCOXwOPb4humoW9nS515g8PNWERpe+CGFvbOKQKua+E+obZtBrcLFJojsUsLRotgw==",
+  "dgSpecHash": "DXEncEuE0sC1t2gnNMXPNV76YgmKDEX+OS0M/hY7qhc1WSS4Nq53Fih/Lc13sYhZVDZYHjciOyyqdbQvsQrRrg==",
   "success": true,
   "projectFilePath": "C:\\Users\\tyautl\\Git\\WordDocVar\\WordDocVar\\WordDocVar.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\tyautl\\.nuget\\packages\\anglesharp\\0.17.1\\anglesharp.0.17.1.nupkg.sha512",
+    "C:\\Users\\tyautl\\.nuget\\packages\\anglesharp.css\\0.17.0\\anglesharp.css.0.17.0.nupkg.sha512",
+    "C:\\Users\\tyautl\\.nuget\\packages\\antixss\\4.3.0\\antixss.4.3.0.nupkg.sha512",
     "C:\\Users\\tyautl\\.nuget\\packages\\documentformat.openxml\\2.18.0\\documentformat.openxml.2.18.0.nupkg.sha512",
+    "C:\\Users\\tyautl\\.nuget\\packages\\htmlsanitizer\\8.0.645\\htmlsanitizer.8.0.645.nupkg.sha512",
     "C:\\Users\\tyautl\\.nuget\\packages\\microsoft.netcore.platforms\\2.0.0\\microsoft.netcore.platforms.2.0.0.nupkg.sha512",
     "C:\\Users\\tyautl\\.nuget\\packages\\microsoft.win32.systemevents\\4.5.0\\microsoft.win32.systemevents.4.5.0.nupkg.sha512",
     "C:\\Users\\tyautl\\.nuget\\packages\\newtonsoft.json\\12.0.2\\newtonsoft.json.12.0.2.nupkg.sha512",
-    "C:\\Users\\tyautl\\.nuget\\packages\\openxmlpowertools-netstandard\\4.4.21\\openxmlpowertools-netstandard.4.4.21.nupkg.sha512",
-    "C:\\Users\\tyautl\\.nuget\\packages\\openxmltemplates\\2.0.4\\openxmltemplates.2.0.4.nupkg.sha512",
+    "C:\\Users\\tyautl\\.nuget\\packages\\open-xml-powertools\\4.4.0\\open-xml-powertools.4.4.0.nupkg.sha512",
+    "C:\\Users\\tyautl\\.nuget\\packages\\openxmltemplatesforked\\2.0.4\\openxmltemplatesforked.2.0.4.nupkg.sha512",
+    "C:\\Users\\tyautl\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
+    "C:\\Users\\tyautl\\.nuget\\packages\\system.collections.immutable\\7.0.0\\system.collections.immutable.7.0.0.nupkg.sha512",
     "C:\\Users\\tyautl\\.nuget\\packages\\system.drawing.common\\4.5.0\\system.drawing.common.4.5.0.nupkg.sha512",
-    "C:\\Users\\tyautl\\.nuget\\packages\\system.io.packaging\\4.7.0\\system.io.packaging.4.7.0.nupkg.sha512"
+    "C:\\Users\\tyautl\\.nuget\\packages\\system.io.packaging\\4.7.0\\system.io.packaging.4.7.0.nupkg.sha512",
+    "C:\\Users\\tyautl\\.nuget\\packages\\system.memory\\4.5.5\\system.memory.4.5.5.nupkg.sha512",
+    "C:\\Users\\tyautl\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
+    "C:\\Users\\tyautl\\.nuget\\packages\\system.text.encoding.codepages\\6.0.0\\system.text.encoding.codepages.6.0.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'AntiXSS 4.3.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
+      "libraryId": "AntiXSS",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v3.1"
+      ]
+    }
+  ]
 }
