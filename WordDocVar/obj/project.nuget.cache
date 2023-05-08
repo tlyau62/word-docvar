@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "DXEncEuE0sC1t2gnNMXPNV76YgmKDEX+OS0M/hY7qhc1WSS4Nq53Fih/Lc13sYhZVDZYHjciOyyqdbQvsQrRrg==",
+  "dgSpecHash": "dR09WiDFyn1kvLzeJqj02yYmWhKs6gNnXMjbZ34f1Xjlfo5nlTzcxJqM/zcri+4phv4FSpSmRhTD4sTJ9RuVlA==",
   "success": true,
   "projectFilePath": "C:\\Users\\tyautl\\Git\\WordDocVar\\WordDocVar\\WordDocVar.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\tyautl\\.nuget\\packages\\anglesharp\\0.17.1\\anglesharp.0.17.1.nupkg.sha512",
     "C:\\Users\\tyautl\\.nuget\\packages\\anglesharp.css\\0.17.0\\anglesharp.css.0.17.0.nupkg.sha512",
+    "C:\\Users\\tyautl\\.nuget\\packages\\anglesharp.xml\\0.17.0\\anglesharp.xml.0.17.0.nupkg.sha512",
     "C:\\Users\\tyautl\\.nuget\\packages\\antixss\\4.3.0\\antixss.4.3.0.nupkg.sha512",
     "C:\\Users\\tyautl\\.nuget\\packages\\documentformat.openxml\\2.18.0\\documentformat.openxml.2.18.0.nupkg.sha512",
     "C:\\Users\\tyautl\\.nuget\\packages\\htmlsanitizer\\8.0.645\\htmlsanitizer.8.0.645.nupkg.sha512",

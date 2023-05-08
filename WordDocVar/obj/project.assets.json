@@ -27,6 +27,18 @@
           "lib/netstandard2.0/AngleSharp.Css.dll": {}
         }
       },
+      "AngleSharp.Xml/0.17.0": {
+        "type": "package",
+        "dependencies": {
+          "AngleSharp": "0.17.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/AngleSharp.Xml.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/AngleSharp.Xml.dll": {}
+        }
+      },
       "AntiXSS/4.3.0": {
         "type": "package",
         "compile": {
@@ -266,6 +278,24 @@
         "lib/net7.0/AngleSharp.Css.xml",
         "lib/netstandard2.0/AngleSharp.Css.dll",
         "lib/netstandard2.0/AngleSharp.Css.xml",
+        "logo.png"
+      ]
+    },
+    "AngleSharp.Xml/0.17.0": {
+      "sha512": "BVOoT6PKup6GEXsdpPWLmkkRxbZI6hpC0ejDE8TmZMjhIbIbmnvmZxK6qpgvuvk5HxsUDVhPDjfrY6w8l7Kibg==",
+      "type": "package",
+      "path": "anglesharp.xml/0.17.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "anglesharp.xml.0.17.0.nupkg.sha512",
+        "anglesharp.xml.nuspec",
+        "lib/net461/AngleSharp.Xml.dll",
+        "lib/net461/AngleSharp.Xml.xml",
+        "lib/net472/AngleSharp.Xml.dll",
+        "lib/net472/AngleSharp.Xml.xml",
+        "lib/netstandard2.0/AngleSharp.Xml.dll",
+        "lib/netstandard2.0/AngleSharp.Xml.xml",
         "logo.png"
       ]
     },
@@ -630,6 +660,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
+      "AngleSharp.Xml >= 0.17.0",
       "AntiXSS >= 4.3.0",
       "DocumentFormat.OpenXml >= 2.18.0",
       "HtmlSanitizer >= 8.0.645",
@@ -675,6 +706,10 @@
     "frameworks": {
       "netcoreapp3.1": {
         "dependencies": {
+          "AngleSharp.Xml": {
+            "target": "Package",
+            "version": "[0.17.0, )"
+          },
           "AntiXSS": {
             "target": "Package",
             "version": "[4.3.0, )"

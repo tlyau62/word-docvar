@@ -30,4 +30,5 @@ C:\Users\tyautl\Git\WordDocVar\WordDocVar\bin\Debug\netcoreapp3.1\System.Text.En
 C:\Users\tyautl\Git\WordDocVar\WordDocVar\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.1\System.Text.Encoding.CodePages.dll
 C:\Users\tyautl\Git\WordDocVar\WordDocVar\bin\Debug\netcoreapp3.1\AntiXssLibrary.dll
 C:\Users\tyautl\Git\WordDocVar\WordDocVar\bin\Debug\netcoreapp3.1\HtmlSanitizationLibrary.dll
+C:\Users\tyautl\Git\WordDocVar\WordDocVar\bin\Debug\netcoreapp3.1\AngleSharp.Xml.dll
 C:\Users\tyautl\Git\WordDocVar\WordDocVar\obj\Debug\netcoreapp3.1\WordDocVar.csproj.CoreCompileInputs.cache

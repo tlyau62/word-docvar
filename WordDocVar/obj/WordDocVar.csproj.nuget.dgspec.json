@@ -39,6 +39,10 @@
       "frameworks": {
         "netcoreapp3.1": {
           "dependencies": {
+            "AngleSharp.Xml": {
+              "target": "Package",
+              "version": "[0.17.0, )"
+            },
             "AntiXSS": {
               "target": "Package",
               "version": "[4.3.0, )"

@@ -15,6 +15,9 @@ using Microsoft.Security.Application;
 using System.Xml;
 using System.Text.RegularExpressions;
 using System.Web;
+using AngleSharp.Xml.Parser;
+using AngleSharp.Xml;
+using AngleSharp.Html.Parser;
 
 namespace WordDocVar
 {
@@ -64,32 +67,11 @@ namespace WordDocVar
         {
             var htmlSanitizer = new HtmlSanitizer();
             var shtml = htmlSanitizer.Sanitize(html);
-            var xml = Regex.Replace(shtml, @"&([a-z0-9]+|#[0-9]{1,6}|#x[0-9a-fA-F]{1,6});", m => EscapeXml(HttpUtility.HtmlDecode(m.Value)));
-            var wrap = $"<html><body>{xml}</body></html>";
-            var xe = XElement.Parse(wrap);
+            var xml = new HtmlParser().ParseDocument(shtml).ToXml();
+            var xe = XElement.Parse(xml);
             var wml = OpenXmlPowerTools.HtmlToWmlConverter.ConvertHtmlToWml("", "", "", xe, OpenXmlPowerTools.HtmlToWmlConverter.GetDefaultSettings());
 
             return ToOpenXmlElement(wml.MainDocumentPart);
-        }
-
-        /**
-         * https://stackoverflow.com/questions/22906722/how-to-encode-special-characters-in-xml
-         */
-        private string EscapeXml(string s)
-        {
-            string toxml = s;
-
-            if (!string.IsNullOrEmpty(toxml))
-            {
-                // replace literal values with entities
-                toxml = toxml.Replace("&", "&amp;");
-                toxml = toxml.Replace("'", "&apos;");
-                toxml = toxml.Replace("\"", "&quot;");
-                toxml = toxml.Replace(">", "&gt;");
-                toxml = toxml.Replace("<", "&lt;");
-            }
-
-            return toxml;
         }
     }
 }
